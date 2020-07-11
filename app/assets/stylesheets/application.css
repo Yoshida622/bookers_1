@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+* {
+  color: #6c6b6b;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.flash-notice {
+  color: green;
+}
+.flash-alert {
+  color: red;
+}
