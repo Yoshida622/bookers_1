@@ -92,3 +92,4 @@ config/webpack/
 config/webpacker.yml
 postcss.config.js
 yarn.lock
+.DS_Store

@@ -18,7 +18,7 @@ class BooksController < ApplicationController
     else
        @books = Book.all
        @book = Book.new
-       flash.now[:alert] = "error"
+       flash.now[:alert] = "error can't be blank"
        render :index
     end
   end
@@ -33,7 +33,7 @@ class BooksController < ApplicationController
        redirect_to book_path(book.id), notice: 'successfully'
     else
        @book = Book.find(params[:id])
-       flash.now[:alert] = "error"
+       flash.now[:alert] = "error can't be blank"
        render :edit
     end
   end
